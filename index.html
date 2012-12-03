@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Carousel Evolution</title>
+<link rel="Stylesheet" type="text/css" href="css/carousal.css" />
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.carousel-1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.carousel').carousel(
+	{
+		carouselWidth:930,
+		carouselHeight:330,
+		directionNav:true,
+		shadow:true,
+		buttonNav:'bullets',
+		mouse:true
+	});
+	});
+</script>
+</head>
+<body>
+<div class="carousel">
+  <div class="slides">
+    <div> <a href="#"> <img src="images/slide-1.jpg" /> </a> </div>
+    <div> <a href="#"> <img src="images/slide-2.jpg" /> </a> </div>
+    <div> <a href="#"> <img src="images/slide-3.jpg" /> </a> </div>
+    <div> <a href="#"> <img src="images/slide-4.jpg" /> </a> </div>
+    <div> <a href="#"> <img src="images/slide-5.jpg" /> </a> </div>
+    <div> <a href="#"> <img src="images/slide-6.jpg" /> </a> </div>
+    <div> <img src="images/slide-7.jpg" /> </div>
+  </div>
+</div>
+</body>
+</html>
